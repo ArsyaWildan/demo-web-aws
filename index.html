@@ -1,24 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Kelompok 3</title>
+  <title>Kelompok 3 dengan Animasi</title>
   <style>
-    body {
-      text-align: center;
-      font-family: Arial, sans-serif;
-      height: 100vh; /* Membuat tinggi halaman penuh */
-      display: flex; /* Mengatur elemen sebagai flex container */
-      flex-direction: column; /* Menempatkan elemen secara vertikal */
-      justify-content: center; /* Menempatkan elemen di tengah secara vertikal */
-      align-items: center; /* Menempatkan elemen di tengah secara horizontal */
-    }
     h1 {
-      font-size: 5rem; /* Atur ukuran font sesuai keinginan */
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    h1:hover {
+      opacity: 1;
     }
   </style>
 </head>
 <body>
-  <h1>PROJECT KELOMPOK 3</h1>
-  <p></p>
+  <h1 class="kelompok">Kelompok 3</h1>
 </body>
 </html>
