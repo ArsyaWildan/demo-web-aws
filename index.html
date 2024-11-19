@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Kelompok 3 dengan Animasi</title>
+  <title>Animasi Tulisan</title>
   <style>
-    h1 {
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
+    .animated-heading {
+      font-size: 5rem;
+      text-align: center;
+      animation: type 2s steps(10, end);
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: .15em solid black;
+      width: 0;
     }
-    h1:hover {
-      opacity: 1;
+
+    @keyframes type {
+      from { width: 0; }
+      to { width: 100%; }
     }
   </style>
 </head>
 <body>
-  <h1 class="kelompok">Kelompok 3</h1>
+  <h1 class="animated-heading">Kelompok 3</h1>
 </body>
 </html>
